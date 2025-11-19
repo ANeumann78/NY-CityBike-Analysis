@@ -73,7 +73,6 @@ Weather data is retrieved from:
 **NOAA Climate Data Online (CDO)**  
 Dataset: **GHCND – Daily Summaries**  
 Station: **USW00094728 (NYC Central Park)**  
-API calls use pagination to retrieve full yearly data.
 
 ---
 
@@ -83,7 +82,7 @@ API calls use pagination to retrieve full yearly data.
 - NumPy
 - Matplotlib / Seaborn / Plotly
 - Requests (NOAA API)
-- Folium / Geopandas (optional)
+- Folium / Geopandas (mapping)
 - Jupyter Notebooks
 
 ---
