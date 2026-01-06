@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_9d098e0fa0068a6fe3b7e700be2e0275 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_9d098e0fa0068a6fe3b7e700be2e0275" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_9d098e0fa0068a6fe3b7e700be2e0275 = L.map(
+                "map_9d098e0fa0068a6fe3b7e700be2e0275",
+                {
+                    center: [40.75, -73.98],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_3e7faa885219a970d5b80b5ad636d363 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_3e7faa885219a970d5b80b5ad636d363.addTo(map_9d098e0fa0068a6fe3b7e700be2e0275);
+        
+    
+            var poly_line_e17af394819911c4e0d428717ca01401 = L.polyline(
+                [[40.76590936, -73.97634151], [40.76590936, -73.97634151]],
+                {"bubblingMouseEvents": true, "color": "#42be71ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#42be71ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 7}
+            ).addTo(map_9d098e0fa0068a6fe3b7e700be2e0275);
+        
+    
+            poly_line_e17af394819911c4e0d428717ca01401.bindTooltip(
+                `<div>
+                     <b>Start:</b> Central Park S & 6 Ave<br><b>End:</b> Central Park S & 6 Ave<br><b>Trips:</b> 12041<br><b>Duration:</b> 38.4 min
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_28ca6722defe9e7ee544354438d47002 = L.polyline(
+                [[40.7667405590595, -73.9790689945221], [40.7667405590595, -73.9790689945221]],
+                {"bubblingMouseEvents": true, "color": "#6ecf58ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#6ecf58ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_9d098e0fa0068a6fe3b7e700be2e0275);
+        
+    
+            poly_line_28ca6722defe9e7ee544354438d47002.bindTooltip(
+                `<div>
+                     <b>Start:</b> 7 Ave & Central Park South<br><b>End:</b> 7 Ave & Central Park South<br><b>Trips:</b> 8541<br><b>Duration:</b> 42.6 min
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_5292b0d3ee79bd2c8cc7421211f5ac02 = L.polyline(
+                [[40.757284, -73.9536], [40.757284, -73.9536]],
+                {"bubblingMouseEvents": true, "color": "#9fda39ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#9fda39ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_9d098e0fa0068a6fe3b7e700be2e0275);
+        
+    
+            poly_line_5292b0d3ee79bd2c8cc7421211f5ac02.bindTooltip(
+                `<div>
+                     <b>Start:</b> Roosevelt Island Tramway<br><b>End:</b> Roosevelt Island Tramway<br><b>Trips:</b> 8213<br><b>Duration:</b> 46.4 min
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_5ae0d686d9e8264f59a927e3da77a2f6 = L.polyline(
+                [[40.7643971, -73.97371465], [40.7643971, -73.97371465]],
+                {"bubblingMouseEvents": true, "color": "#38b977ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#38b977ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_9d098e0fa0068a6fe3b7e700be2e0275);
+        
+    
+            poly_line_5ae0d686d9e8264f59a927e3da77a2f6.bindTooltip(
+                `<div>
+                     <b>Start:</b> Grand Army Plaza & Central Park S<br><b>End:</b> Grand Army Plaza & Central Park S<br><b>Trips:</b> 7287<br><b>Duration:</b> 37.3 min
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_b6e3fda6c921334c393dc7e64974821d = L.polyline(
+                [[40.69231660719192, -74.01486575603485], [40.69231660719192, -74.01486575603485]],
+                {"bubblingMouseEvents": true, "color": "#ece51eff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#ece51eff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_9d098e0fa0068a6fe3b7e700be2e0275);
+        
+    
+            poly_line_b6e3fda6c921334c393dc7e64974821d.bindTooltip(
+                `<div>
+                     <b>Start:</b> Soissons Landing<br><b>End:</b> Soissons Landing<br><b>Trips:</b> 7275<br><b>Duration:</b> 52.2 min
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_b87c06b38bc99df4236b20ae5e3c873d = L.polyline(
+                [[40.74173969, -73.99415556], [40.7454973, -74.00197139]],
+                {"bubblingMouseEvents": true, "color": "#470f62ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#470f62ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9d098e0fa0068a6fe3b7e700be2e0275);
+        
+    
+            poly_line_b87c06b38bc99df4236b20ae5e3c873d.bindTooltip(
+                `<div>
+                     <b>Start:</b> W 21 St & 6 Ave<br><b>End:</b> 9 Ave & W 22 St<br><b>Trips:</b> 6345<br><b>Duration:</b> 5.2 min
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_40992aeed677a1b3055723845cb462de = L.polyline(
+                [[40.77282817, -73.96685276], [40.77282817, -73.96685276]],
+                {"bubblingMouseEvents": true, "color": "#218e8cff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#218e8cff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9d098e0fa0068a6fe3b7e700be2e0275);
+        
+    
+            poly_line_40992aeed677a1b3055723845cb462de.bindTooltip(
+                `<div>
+                     <b>Start:</b> 5 Ave & E 72 St<br><b>End:</b> 5 Ave & E 72 St<br><b>Trips:</b> 6037<br><b>Duration:</b> 28.1 min
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_3c44501caedf996d14e4fae0ed6d39f4 = L.polyline(
+                [[40.7612274, -73.96094022], [40.76500525, -73.95818491]],
+                {"bubblingMouseEvents": true, "color": "#440154ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#440154ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9d098e0fa0068a6fe3b7e700be2e0275);
+        
+    
+            poly_line_3c44501caedf996d14e4fae0ed6d39f4.bindTooltip(
+                `<div>
+                     <b>Start:</b> 1 Ave & E 62 St<br><b>End:</b> 1 Ave & E 68 St<br><b>Trips:</b> 5826<br><b>Duration:</b> 3.3 min
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_be2f4d52651c129de69c2d5a5f998c77 = L.polyline(
+                [[40.68706579875912, -74.01675585121666], [40.68706579875912, -74.01675585121666]],
+                {"bubblingMouseEvents": true, "color": "#fde725ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#fde725ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9d098e0fa0068a6fe3b7e700be2e0275);
+        
+    
+            poly_line_be2f4d52651c129de69c2d5a5f998c77.bindTooltip(
+                `<div>
+                     <b>Start:</b> Yankee Ferry Terminal<br><b>End:</b> Yankee Ferry Terminal<br><b>Trips:</b> 5759<br><b>Duration:</b> 53.6 min
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_318171bc137b9649606abfe4c0356c8a = L.polyline(
+                [[40.76695317, -73.98169333], [40.76695317, -73.98169333]],
+                {"bubblingMouseEvents": true, "color": "#3dbc74ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3dbc74ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9d098e0fa0068a6fe3b7e700be2e0275);
+        
+    
+            poly_line_318171bc137b9649606abfe4c0356c8a.bindTooltip(
+                `<div>
+                     <b>Start:</b> Broadway & W 58 St<br><b>End:</b> Broadway & W 58 St<br><b>Trips:</b> 5509<br><b>Duration:</b> 37.9 min
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_552b91bf63330cca0be1f9a36ecb5c69 = L.polyline(
+                [[40.76087502, -74.00277668], [40.76087502, -74.00277668]],
+                {"bubblingMouseEvents": true, "color": "#228d8dff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#228d8dff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9d098e0fa0068a6fe3b7e700be2e0275);
+        
+    
+            poly_line_552b91bf63330cca0be1f9a36ecb5c69.bindTooltip(
+                `<div>
+                     <b>Start:</b> 12 Ave & W 40 St<br><b>End:</b> 12 Ave & W 40 St<br><b>Trips:</b> 5409<br><b>Duration:</b> 27.7 min
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_de6cac3951d9f0bb9059437b5b1af156 = L.polyline(
+                [[40.75513557, -73.98658032], [40.75513557, -73.98658032]],
+                {"bubblingMouseEvents": true, "color": "#2d6e8eff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#2d6e8eff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9d098e0fa0068a6fe3b7e700be2e0275);
+        
+    
+            poly_line_de6cac3951d9f0bb9059437b5b1af156.bindTooltip(
+                `<div>
+                     <b>Start:</b> Broadway & W 41 St<br><b>End:</b> Broadway & W 41 St<br><b>Trips:</b> 5316<br><b>Duration:</b> 21.5 min
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_54840407b87d1d465d690e5a386bee9f = L.polyline(
+                [[40.77579376683666, -73.9762057363987], [40.77579376683666, -73.9762057363987]],
+                {"bubblingMouseEvents": true, "color": "#1f9e89ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#1f9e89ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9d098e0fa0068a6fe3b7e700be2e0275);
+        
+    
+            poly_line_54840407b87d1d465d690e5a386bee9f.bindTooltip(
+                `<div>
+                     <b>Start:</b> Central Park West & W 72 St<br><b>End:</b> Central Park West & W 72 St<br><b>Trips:</b> 5262<br><b>Duration:</b> 31.4 min
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_1f3437c0f895eb32e00847f679fb3646 = L.polyline(
+                [[40.7172274, -73.98802084], [40.714211, -73.981095]],
+                {"bubblingMouseEvents": true, "color": "#471264ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#471264ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_9d098e0fa0068a6fe3b7e700be2e0275);
+        
+    
+            poly_line_1f3437c0f895eb32e00847f679fb3646.bindTooltip(
+                `<div>
+                     <b>Start:</b> Norfolk St & Broome St<br><b>End:</b> Henry St & Grand St<br><b>Trips:</b> 4883<br><b>Duration:</b> 5.5 min
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_b8174a76cdf4f9915fe5051990f07fd5 = L.polyline(
+                [[40.71754834, -74.01322069], [40.71754834, -74.01322069]],
+                {"bubblingMouseEvents": true, "color": "#297a8eff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#297a8eff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_9d098e0fa0068a6fe3b7e700be2e0275);
+        
+    
+            poly_line_b8174a76cdf4f9915fe5051990f07fd5.bindTooltip(
+                `<div>
+                     <b>Start:</b> West St & Chambers St<br><b>End:</b> West St & Chambers St<br><b>Trips:</b> 4768<br><b>Duration:</b> 23.9 min
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_bb75bae5edf596f4dbcbbea93326ce46 = L.polyline(
+                [[40.6610633719006, -73.97945255041122], [40.6610633719006, -73.97945255041122]],
+                {"bubblingMouseEvents": true, "color": "#1f9a8aff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#1f9a8aff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_9d098e0fa0068a6fe3b7e700be2e0275);
+        
+    
+            poly_line_bb75bae5edf596f4dbcbbea93326ce46.bindTooltip(
+                `<div>
+                     <b>Start:</b> West Drive & Prospect Park West<br><b>End:</b> West Drive & Prospect Park West<br><b>Trips:</b> 4643<br><b>Duration:</b> 30.6 min
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_24f0d728c5808d0a27fbc311a5bfc1a4 = L.polyline(
+                [[40.71754834, -74.01322069], [40.7277140777778, -74.01129573583603]],
+                {"bubblingMouseEvents": true, "color": "#472d7bff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#472d7bff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_9d098e0fa0068a6fe3b7e700be2e0275);
+        
+    
+            poly_line_24f0d728c5808d0a27fbc311a5bfc1a4.bindTooltip(
+                `<div>
+                     <b>Start:</b> West St & Chambers St<br><b>End:</b> Pier 40 - Hudson River Park<br><b>Trips:</b> 4584<br><b>Duration:</b> 9.7 min
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_cfc98a17de3f621375a02158df876ba9 = L.polyline(
+                [[40.782323, -73.959875], [40.782323, -73.959875]],
+                {"bubblingMouseEvents": true, "color": "#24a884ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#24a884ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_9d098e0fa0068a6fe3b7e700be2e0275);
+        
+    
+            poly_line_cfc98a17de3f621375a02158df876ba9.bindTooltip(
+                `<div>
+                     <b>Start:</b> 5 Ave & E 87 St<br><b>End:</b> 5 Ave & E 87 St<br><b>Trips:</b> 4571<br><b>Duration:</b> 33.6 min
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_6bff44ee1620d75a4909b62eaf033289 = L.polyline(
+                [[40.68706579875912, -74.01675585121666], [40.69231660719192, -74.01486575603485]],
+                {"bubblingMouseEvents": true, "color": "#7ed34eff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#7ed34eff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_9d098e0fa0068a6fe3b7e700be2e0275);
+        
+    
+            poly_line_6bff44ee1620d75a4909b62eaf033289.bindTooltip(
+                `<div>
+                     <b>Start:</b> Yankee Ferry Terminal<br><b>End:</b> Soissons Landing<br><b>Trips:</b> 4556<br><b>Duration:</b> 43.9 min
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_b9c62d6ccc408f72da032d6f0d213736 = L.polyline(
+                [[40.72019521437465, -74.0103006362915], [40.71221958009051, -74.01047229766846]],
+                {"bubblingMouseEvents": true, "color": "#471265ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#471265ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_9d098e0fa0068a6fe3b7e700be2e0275);
+        
+    
+            poly_line_b9c62d6ccc408f72da032d6f0d213736.bindTooltip(
+                `<div>
+                     <b>Start:</b> North Moore St & Greenwich St<br><b>End:</b> Vesey St & Church St<br><b>Trips:</b> 4523<br><b>Duration:</b> 5.6 min
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_04b4bee7e2d7e626553e33f102563121 = L.polyline(
+                [[40.74173969, -73.99415556], [40.74691959, -74.00451887]],
+                {"bubblingMouseEvents": true, "color": "#48196bff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#48196bff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_9d098e0fa0068a6fe3b7e700be2e0275);
+        
+    
+            poly_line_04b4bee7e2d7e626553e33f102563121.bindTooltip(
+                `<div>
+                     <b>Start:</b> W 21 St & 6 Ave<br><b>End:</b> W 22 St & 10 Ave<br><b>Trips:</b> 4410<br><b>Duration:</b> 6.6 min
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_97471f3422092db1bc10231e7debe41b = L.polyline(
+                [[40.7734066, -73.97782542], [40.7734066, -73.97782542]],
+                {"bubblingMouseEvents": true, "color": "#1f9b89ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#1f9b89ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_9d098e0fa0068a6fe3b7e700be2e0275);
+        
+    
+            poly_line_97471f3422092db1bc10231e7debe41b.bindTooltip(
+                `<div>
+                     <b>Start:</b> Central Park West & W 68 St<br><b>End:</b> Central Park West & W 68 St<br><b>Trips:</b> 4328<br><b>Duration:</b> 30.8 min
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_4f673b154e54490fc70c70dbb2c791cb = L.polyline(
+                [[40.714211, -73.981095], [40.7172274, -73.98802084]],
+                {"bubblingMouseEvents": true, "color": "#471062ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#471062ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_9d098e0fa0068a6fe3b7e700be2e0275);
+        
+    
+            poly_line_4f673b154e54490fc70c70dbb2c791cb.bindTooltip(
+                `<div>
+                     <b>Start:</b> Henry St & Grand St<br><b>End:</b> Norfolk St & Broome St<br><b>Trips:</b> 4324<br><b>Duration:</b> 5.3 min
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_81bf093ebaa2cb2ad1fe2efba87d8514 = L.polyline(
+                [[40.69231660719192, -74.01486575603485], [40.68706579875912, -74.01675585121666]],
+                {"bubblingMouseEvents": true, "color": "#46c06fff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#46c06fff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_9d098e0fa0068a6fe3b7e700be2e0275);
+        
+    
+            poly_line_81bf093ebaa2cb2ad1fe2efba87d8514.bindTooltip(
+                `<div>
+                     <b>Start:</b> Soissons Landing<br><b>End:</b> Yankee Ferry Terminal<br><b>Trips:</b> 4299<br><b>Duration:</b> 38.8 min
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_bc7fe10a8c9904810151df59b9acb049 = L.polyline(
+                [[40.799484, -73.955613], [40.799484, -73.955613]],
+                {"bubblingMouseEvents": true, "color": "#24858dff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#24858dff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_9d098e0fa0068a6fe3b7e700be2e0275);
+        
+    
+            poly_line_bc7fe10a8c9904810151df59b9acb049.bindTooltip(
+                `<div>
+                     <b>Start:</b> Central Park North & Adam Clayton Powell Blvd<br><b>End:</b> Central Park North & Adam Clayton Powell Blvd<br><b>Trips:</b> 4260<br><b>Duration:</b> 26.2 min
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_c50d9728dd586bd0efbfbca014813c45 = L.polyline(
+                [[40.7277140777778, -74.01129573583603], [40.71754834, -74.01322069]],
+                {"bubblingMouseEvents": true, "color": "#472878ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#472878ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_9d098e0fa0068a6fe3b7e700be2e0275);
+        
+    
+            poly_line_c50d9728dd586bd0efbfbca014813c45.bindTooltip(
+                `<div>
+                     <b>Start:</b> Pier 40 - Hudson River Park<br><b>End:</b> West St & Chambers St<br><b>Trips:</b> 4222<br><b>Duration:</b> 8.9 min
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_32cb864c33d053092d83e1ca9e4a2740 = L.polyline(
+                [[40.757284, -73.9536], [40.7639089, -73.9477213]],
+                {"bubblingMouseEvents": true, "color": "#32638dff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#32638dff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_9d098e0fa0068a6fe3b7e700be2e0275);
+        
+    
+            poly_line_32cb864c33d053092d83e1ca9e4a2740.bindTooltip(
+                `<div>
+                     <b>Start:</b> Roosevelt Island Tramway<br><b>End:</b> Motorgate<br><b>Trips:</b> 4215<br><b>Duration:</b> 19.3 min
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_dc5260b4350a1415d43efe5a25414217 = L.polyline(
+                [[40.7639089, -73.9477213], [40.757284, -73.9536]],
+                {"bubblingMouseEvents": true, "color": "#34608dff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#34608dff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_9d098e0fa0068a6fe3b7e700be2e0275);
+        
+    
+            poly_line_dc5260b4350a1415d43efe5a25414217.bindTooltip(
+                `<div>
+                     <b>Start:</b> Motorgate<br><b>End:</b> Roosevelt Island Tramway<br><b>Trips:</b> 4194<br><b>Duration:</b> 18.6 min
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_1bb8af7abe50d7bf79173b703841fccd = L.polyline(
+                [[40.71745169, -73.95850939], [40.71285887, -73.96590294]],
+                {"bubblingMouseEvents": true, "color": "#481c6eff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#481c6eff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_9d098e0fa0068a6fe3b7e700be2e0275);
+        
+    
+            poly_line_1bb8af7abe50d7bf79173b703841fccd.bindTooltip(
+                `<div>
+                     <b>Start:</b> N 6 St & Bedford Ave<br><b>End:</b> S 4 St & Wythe Ave<br><b>Trips:</b> 4175<br><b>Duration:</b> 7.0 min
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_cba771124ca1356a3cb4685752ac497b = L.polyline(
+                [[40.74691959, -74.00451887], [40.74475148, -73.99915362]],
+                {"bubblingMouseEvents": true, "color": "#440154ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#440154ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_9d098e0fa0068a6fe3b7e700be2e0275);
+        
+    
+            poly_line_cba771124ca1356a3cb4685752ac497b.bindTooltip(
+                `<div>
+                     <b>Start:</b> W 22 St & 10 Ave<br><b>End:</b> W 22 St & 8 Ave<br><b>Trips:</b> 4114<br><b>Duration:</b> 3.4 min
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_fc6a85e75981d284ab4d421ca80db609 = L.polyline(
+                [[40.71273266, -74.0046073], [40.71273266, -74.0046073]],
+                {"bubblingMouseEvents": true, "color": "#277f8eff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#277f8eff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_9d098e0fa0068a6fe3b7e700be2e0275);
+        
+    
+            poly_line_fc6a85e75981d284ab4d421ca80db609.bindTooltip(
+                `<div>
+                     <b>Start:</b> Centre St & Chambers St<br><b>End:</b> Centre St & Chambers St<br><b>Trips:</b> 4051<br><b>Duration:</b> 24.8 min
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_583ce827112c10596ff1785ef81e8bca = L.polyline(
+                [[40.76500525, -73.95818491], [40.77140426, -73.9535166]],
+                {"bubblingMouseEvents": true, "color": "#471062ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#471062ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_9d098e0fa0068a6fe3b7e700be2e0275);
+        
+    
+            poly_line_583ce827112c10596ff1785ef81e8bca.bindTooltip(
+                `<div>
+                     <b>Start:</b> 1 Ave & E 68 St<br><b>End:</b> 1 Ave & E 78 St<br><b>Trips:</b> 3906<br><b>Duration:</b> 5.3 min
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_a03765dcf8519cafe805208f6f73dbcb = L.polyline(
+                [[40.76590936, -73.97634151], [40.78232260730881, -73.95987510681152]],
+                {"bubblingMouseEvents": true, "color": "#1f9b8aff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#1f9b8aff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_9d098e0fa0068a6fe3b7e700be2e0275);
+        
+    
+            poly_line_a03765dcf8519cafe805208f6f73dbcb.bindTooltip(
+                `<div>
+                     <b>Start:</b> Central Park S & 6 Ave<br><b>End:</b> 5 Ave & E 87 St<br><b>Trips:</b> 3878<br><b>Duration:</b> 30.7 min
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_ec3c30d3f5af6eda8d4da8cf91274b46 = L.polyline(
+                [[40.76087502, -74.00277668], [40.71754834, -74.01322069]],
+                {"bubblingMouseEvents": true, "color": "#277f8eff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#277f8eff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_9d098e0fa0068a6fe3b7e700be2e0275);
+        
+    
+            poly_line_ec3c30d3f5af6eda8d4da8cf91274b46.bindTooltip(
+                `<div>
+                     <b>Start:</b> 12 Ave & W 40 St<br><b>End:</b> West St & Chambers St<br><b>Trips:</b> 3858<br><b>Duration:</b> 25.0 min
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_168ab1e88a21950cff905800822b5cb0 = L.polyline(
+                [[40.73555, -73.95284], [40.74232744, -73.95411749]],
+                {"bubblingMouseEvents": true, "color": "#481668ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#481668ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_9d098e0fa0068a6fe3b7e700be2e0275);
+        
+    
+            poly_line_168ab1e88a21950cff905800822b5cb0.bindTooltip(
+                `<div>
+                     <b>Start:</b> McGuinness Blvd & Eagle St<br><b>End:</b> Vernon Blvd & 50 Ave<br><b>Trips:</b> 3808<br><b>Duration:</b> 6.1 min
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_fb635dedb9aebaab32cc368c27641e4b = L.polyline(
+                [[40.76663814, -73.95348296], [40.7687620293096, -73.95840793848038]],
+                {"bubblingMouseEvents": true, "color": "#46095cff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#46095cff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_9d098e0fa0068a6fe3b7e700be2e0275);
+        
+    
+            poly_line_fb635dedb9aebaab32cc368c27641e4b.bindTooltip(
+                `<div>
+                     <b>Start:</b> E 72 St & York Ave<br><b>End:</b> 2 Ave & E 72 St<br><b>Trips:</b> 3772<br><b>Duration:</b> 4.5 min
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_dd6942acf1ecddad4d3f07749b306b35 = L.polyline(
+                [[40.77966809007312, -73.98093044757842], [40.7829391, -73.9786517]],
+                {"bubblingMouseEvents": true, "color": "#450659ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#450659ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_9d098e0fa0068a6fe3b7e700be2e0275);
+        
+    
+            poly_line_dd6942acf1ecddad4d3f07749b306b35.bindTooltip(
+                `<div>
+                     <b>Start:</b> Amsterdam Ave & W 73 St<br><b>End:</b> Amsterdam Ave & W 79 St<br><b>Trips:</b> 3735<br><b>Duration:</b> 4.0 min
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_9fb9d150b51bedace82b09d6f8453872 = L.polyline(
+                [[40.77140426, -73.9535166], [40.77314236, -73.95856158]],
+                {"bubblingMouseEvents": true, "color": "#460d60ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#460d60ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_9d098e0fa0068a6fe3b7e700be2e0275);
+        
+    
+            poly_line_9fb9d150b51bedace82b09d6f8453872.bindTooltip(
+                `<div>
+                     <b>Start:</b> 1 Ave & E 78 St<br><b>End:</b> E 77 St & 3 Ave<br><b>Trips:</b> 3713<br><b>Duration:</b> 5.0 min
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_8f333cbc289b0a2f89b3ad710fca665f = L.polyline(
+                [[40.83579, -73.913741], [40.83579, -73.913741]],
+                {"bubblingMouseEvents": true, "color": "#2b758eff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#2b758eff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_9d098e0fa0068a6fe3b7e700be2e0275);
+        
+    
+            poly_line_8f333cbc289b0a2f89b3ad710fca665f.bindTooltip(
+                `<div>
+                     <b>Start:</b> Grant Ave & E 169 St<br><b>End:</b> Grant Ave & E 169 St<br><b>Trips:</b> 3713<br><b>Duration:</b> 22.9 min
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_52b637cdf298d32eb949aabb523115cd = L.polyline(
+                [[40.77140426, -73.9535166], [40.7687620293096, -73.95840793848038]],
+                {"bubblingMouseEvents": true, "color": "#460c5eff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#460c5eff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_9d098e0fa0068a6fe3b7e700be2e0275);
+        
+    
+            poly_line_52b637cdf298d32eb949aabb523115cd.bindTooltip(
+                `<div>
+                     <b>Start:</b> 1 Ave & E 78 St<br><b>End:</b> 2 Ave & E 72 St<br><b>Trips:</b> 3693<br><b>Duration:</b> 4.7 min
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_3efccecc5cf04ae3159325bd52be9b69 = L.polyline(
+                [[40.71754834, -74.01322069], [40.74198159994023, -74.00831580162048]],
+                {"bubblingMouseEvents": true, "color": "#32648dff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#32648dff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_9d098e0fa0068a6fe3b7e700be2e0275);
+        
+    
+            poly_line_3efccecc5cf04ae3159325bd52be9b69.bindTooltip(
+                `<div>
+                     <b>Start:</b> West St & Chambers St<br><b>End:</b> 10 Ave & W 14 St<br><b>Trips:</b> 3692<br><b>Duration:</b> 19.3 min
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_f4c978d45c505d2d9cb7bdead86ee648 = L.polyline(
+                [[40.71221958009051, -74.01047229766846], [40.72019521437465, -74.0103006362915]],
+                {"bubblingMouseEvents": true, "color": "#48186bff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#48186bff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_9d098e0fa0068a6fe3b7e700be2e0275);
+        
+    
+            poly_line_f4c978d45c505d2d9cb7bdead86ee648.bindTooltip(
+                `<div>
+                     <b>Start:</b> Vesey St & Church St<br><b>End:</b> North Moore St & Greenwich St<br><b>Trips:</b> 3618<br><b>Duration:</b> 6.5 min
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_643dbe2c22b07cb306d47c4fad3025cd = L.polyline(
+                [[40.74198159994023, -74.00831580162048], [40.71754834, -74.01322069]],
+                {"bubblingMouseEvents": true, "color": "#33618dff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#33618dff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_9d098e0fa0068a6fe3b7e700be2e0275);
+        
+    
+            poly_line_643dbe2c22b07cb306d47c4fad3025cd.bindTooltip(
+                `<div>
+                     <b>Start:</b> 10 Ave & W 14 St<br><b>End:</b> West St & Chambers St<br><b>Trips:</b> 3601<br><b>Duration:</b> 18.9 min
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_46745071a08c6507c769d75c9503abd0 = L.polyline(
+                [[40.70569254, -74.01677685], [40.711444, -74.014847]],
+                {"bubblingMouseEvents": true, "color": "#472879ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#472879ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_9d098e0fa0068a6fe3b7e700be2e0275);
+        
+    
+            poly_line_46745071a08c6507c769d75c9503abd0.bindTooltip(
+                `<div>
+                     <b>Start:</b> Little West St & 1 Pl<br><b>End:</b> West St & Liberty St<br><b>Trips:</b> 3597<br><b>Duration:</b> 9.0 min
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_4c7f93e8189a1eefe64856fad8dbfc01 = L.polyline(
+                [[40.7208736, -73.98085795], [40.72335597960796, -73.98864984512329]],
+                {"bubblingMouseEvents": true, "color": "#460c5fff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#460c5fff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_9d098e0fa0068a6fe3b7e700be2e0275);
+        
+    
+            poly_line_4c7f93e8189a1eefe64856fad8dbfc01.bindTooltip(
+                `<div>
+                     <b>Start:</b> E 2 St & Avenue C<br><b>End:</b> E 1 St & 1 Ave<br><b>Trips:</b> 3580<br><b>Duration:</b> 4.8 min
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_f351648ebc7201f19b74adc9c997cf08 = L.polyline(
+                [[40.71559509, -73.9870295], [40.714211, -73.981095]],
+                {"bubblingMouseEvents": true, "color": "#460a5dff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#460a5dff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_9d098e0fa0068a6fe3b7e700be2e0275);
+        
+    
+            poly_line_f351648ebc7201f19b74adc9c997cf08.bindTooltip(
+                `<div>
+                     <b>Start:</b> Clinton St & Grand St<br><b>End:</b> Henry St & Grand St<br><b>Trips:</b> 3524<br><b>Duration:</b> 4.5 min
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_95332ad63055ba2da3a4d3d0234b712f = L.polyline(
+                [[40.76087502, -74.00277668], [40.74198159994023, -74.00831580162048]],
+                {"bubblingMouseEvents": true, "color": "#34608dff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#34608dff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_9d098e0fa0068a6fe3b7e700be2e0275);
+        
+    
+            poly_line_95332ad63055ba2da3a4d3d0234b712f.bindTooltip(
+                `<div>
+                     <b>Start:</b> 12 Ave & W 40 St<br><b>End:</b> 10 Ave & W 14 St<br><b>Trips:</b> 3513<br><b>Duration:</b> 18.6 min
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_553d0b9dcba07e45ff4d363f6acc15c5 = L.polyline(
+                [[40.71285887, -73.96590294], [40.71745169, -73.95850939]],
+                {"bubblingMouseEvents": true, "color": "#481d6eff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#481d6eff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_9d098e0fa0068a6fe3b7e700be2e0275);
+        
+    
+            poly_line_553d0b9dcba07e45ff4d363f6acc15c5.bindTooltip(
+                `<div>
+                     <b>Start:</b> S 4 St & Wythe Ave<br><b>End:</b> N 6 St & Bedford Ave<br><b>Trips:</b> 3482<br><b>Duration:</b> 7.2 min
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_1cc1dd3f88fe17ff66b7e1990881eb47 = L.polyline(
+                [[40.76590936, -73.97634151], [40.7667405590595, -73.9790689945221]],
+                {"bubblingMouseEvents": true, "color": "#51c569ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#51c569ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_9d098e0fa0068a6fe3b7e700be2e0275);
+        
+    
+            poly_line_1cc1dd3f88fe17ff66b7e1990881eb47.bindTooltip(
+                `<div>
+                     <b>Start:</b> Central Park S & 6 Ave<br><b>End:</b> 7 Ave & Central Park South<br><b>Trips:</b> 3471<br><b>Duration:</b> 40.0 min
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_cec026c976770f26ecfd81c205bb4ca1 = L.polyline(
+                [[40.74691959, -74.00451887], [40.74173969, -73.99415556]],
+                {"bubblingMouseEvents": true, "color": "#481d6fff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#481d6fff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_9d098e0fa0068a6fe3b7e700be2e0275);
+        
+    
+            poly_line_cec026c976770f26ecfd81c205bb4ca1.bindTooltip(
+                `<div>
+                     <b>Start:</b> W 22 St & 10 Ave<br><b>End:</b> W 21 St & 6 Ave<br><b>Trips:</b> 3438<br><b>Duration:</b> 7.2 min
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+    var color_map_0c764a0efd97116004e5ad35b0a62203 = {};
+
+    
+    color_map_0c764a0efd97116004e5ad35b0a62203.color = d3.scale.threshold()
+              .domain([3.283140550978373, 3.3840127441000156, 3.484884937221658, 3.5857571303433007, 3.686629323464943, 3.7875015165865857, 3.8883737097082283, 3.989245902829871, 4.090118095951514, 4.190990289073156, 4.291862482194799, 4.392734675316442, 4.493606868438084, 4.594479061559726, 4.695351254681369, 4.796223447803012, 4.897095640924654, 4.997967834046297, 5.098840027167939, 5.199712220289582, 5.300584413411224, 5.401456606532866, 5.50232879965451, 5.603200992776152, 5.704073185897794, 5.804945379019437, 5.90581757214108, 6.006689765262722, 6.107561958384364, 6.208434151506007, 6.30930634462765, 6.410178537749292, 6.5110507308709344, 6.611922923992577, 6.71279511711422, 6.8136673102358625, 6.9145395033575054, 7.015411696479148, 7.1162838896007905, 7.217156082722433, 7.3180282758440764, 7.4189004689657185, 7.519772662087361, 7.620644855209003, 7.721517048330647, 7.822389241452289, 7.923261434573931, 8.024133627695573, 8.125005820817215, 8.225878013938859, 8.3267502070605, 8.427622400182143, 8.528494593303787, 8.629366786425429, 8.730238979547071, 8.831111172668715, 8.931983365790357, 9.032855558911999, 9.133727752033641, 9.234599945155285, 9.335472138276927, 9.436344331398569, 9.537216524520213, 9.638088717641855, 9.738960910763497, 9.83983310388514, 9.940705297006781, 10.041577490128425, 10.142449683250067, 10.24332187637171, 10.344194069493351, 10.445066262614995, 10.545938455736637, 10.64681064885828, 10.747682841979923, 10.848555035101565, 10.949427228223207, 11.050299421344851, 11.151171614466493, 11.252043807588135, 11.35291600070978, 11.453788193831421, 11.554660386953064, 11.655532580074707, 11.756404773196348, 11.857276966317992, 11.958149159439634, 12.059021352561276, 12.15989354568292, 12.260765738804562, 12.361637931926204, 12.462510125047846, 12.56338231816949, 12.664254511291132, 12.765126704412774, 12.865998897534418, 12.966871090656058, 13.067743283777702, 13.168615476899346, 13.269487670020986, 13.37035986314263, 13.471232056264274, 13.572104249385914, 13.672976442507558, 13.7738486356292, 13.874720828750842, 13.975593021872486, 14.076465214994128, 14.17733740811577, 14.278209601237412, 14.379081794359056, 14.479953987480698, 14.58082618060234, 14.681698373723982, 14.782570566845624, 14.883442759967268, 14.98431495308891, 15.085187146210552, 15.186059339332196, 15.286931532453838, 15.38780372557548, 15.488675918697124, 15.589548111818765, 15.690420304940409, 15.791292498062052, 15.892164691183693, 15.993036884305337, 16.09390907742698, 16.19478127054862, 16.295653463670263, 16.396525656791905, 16.497397849913547, 16.59827004303519, 16.699142236156835, 16.800014429278477, 16.90088662240012, 17.00175881552176, 17.102631008643403, 17.203503201765045, 17.30437539488669, 17.40524758800833, 17.506119781129975, 17.606991974251617, 17.70786416737326, 17.8087363604949, 17.909608553616543, 18.010480746738185, 18.11135293985983, 18.212225132981473, 18.313097326103115, 18.413969519224757, 18.5148417123464, 18.61571390546804, 18.716586098589683, 18.81745829171133, 18.918330484832968, 19.019202677954613, 19.120074871076255, 19.220947064197897, 19.32181925731954, 19.422691450441185, 19.523563643562827, 19.62443583668447, 19.72530802980611, 19.826180222927754, 19.927052416049396, 20.02792460917104, 20.12879680229268, 20.229668995414322, 20.330541188535967, 20.43141338165761, 20.53228557477925, 20.633157767900894, 20.734029961022536, 20.834902154144178, 20.935774347265824, 21.036646540387466, 21.137518733509104, 21.23839092663075, 21.339263119752392, 21.440135312874034, 21.54100750599568, 21.641879699117318, 21.74275189223896, 21.843624085360606, 21.944496278482248, 22.04536847160389, 22.146240664725532, 22.247112857847174, 22.347985050968816, 22.448857244090462, 22.549729437212104, 22.650601630333743, 22.751473823455388, 22.85234601657703, 22.953218209698672, 23.054090402820318, 23.15496259594196, 23.2558347890636, 23.356706982185244, 23.457579175306886, 23.55845136842853, 23.659323561550174, 23.760195754671813, 23.861067947793455, 23.9619401409151, 24.062812334036742, 24.163684527158384, 24.264556720280027, 24.36542891340167, 24.46630110652331, 24.567173299644956, 24.6680454927666, 24.768917685888237, 24.869789879009883, 24.970662072131525, 25.071534265253167, 25.172406458374812, 25.27327865149645, 25.374150844618093, 25.47502303773974, 25.57589523086138, 25.676767423983023, 25.77763961710466, 25.878511810226307, 25.97938400334795, 26.08025619646959, 26.181128389591237, 26.282000582712875, 26.382872775834517, 26.483744968956163, 26.584617162077805, 26.685489355199447, 26.78636154832109, 26.88723374144273, 26.988105934564373, 27.08897812768602, 27.18985032080766, 27.290722513929303, 27.391594707050945, 27.492466900172587, 27.59333909329423, 27.694211286415875, 27.795083479537517, 27.895955672659156, 27.9968278657808, 28.097700058902443, 28.198572252024086, 28.29944444514573, 28.40031663826737, 28.501188831389012, 28.602061024510657, 28.7029332176323, 28.80380541075394, 28.904677603875584, 29.005549796997226, 29.106421990118868, 29.207294183240514, 29.308166376362156, 29.409038569483794, 29.50991076260544, 29.610782955727082, 29.711655148848724, 29.81252734197037, 29.913399535092008, 30.01427172821365, 30.115143921335296, 30.216016114456938, 30.31688830757858, 30.417760500700222, 30.518632693821864, 30.619504886943506, 30.720377080065152, 30.821249273186794, 30.922121466308433, 31.022993659430078, 31.12386585255172, 31.224738045673362, 31.325610238795008, 31.42648243191665, 31.52735462503829, 31.628226818159934, 31.729099011281576, 31.82997120440322, 31.930843397524864, 32.0317155906465, 32.132587783768145, 32.23345997688979, 32.33433217001143, 32.435204363133074, 32.53607655625471, 32.63694874937636, 32.737820942498, 32.83869313561964, 32.93956532874129, 33.04043752186293, 33.14130971498457, 33.24218190810621, 33.34305410122786, 33.4439262943495, 33.54479848747114, 33.64567068059278, 33.746542873714425, 33.84741506683607, 33.94828725995771, 34.049159453079355, 34.15003164620099, 34.25090383932264, 34.351776032444285, 34.45264822556592, 34.55352041868756, 34.65439261180921, 34.75526480493085, 34.85613699805249, 34.95700919117414, 35.057881384295776, 35.15875357741742, 35.25962577053906, 35.360497963660706, 35.46137015678235, 35.562242349904, 35.663114543025635, 35.76398673614728, 35.86485892926892, 35.965731122390565, 36.06660331551221, 36.16747550863385, 36.26834770175549, 36.36921989487713, 36.47009208799878, 36.57096428112042, 36.67183647424206, 36.77270866736371, 36.87358086048534, 36.974453053606986, 37.07532524672863, 37.17619743985027, 37.277069632971916, 37.37794182609356, 37.4788140192152, 37.579686212336846, 37.68055840545849, 37.78143059858013, 37.882302791701775, 37.983174984823414, 38.08404717794505, 38.1849193710667, 38.285791564188344, 38.38666375730998, 38.48753595043163, 38.58840814355327, 38.68928033667491, 38.79015252979656, 38.8910247229182, 38.991896916039835, 39.09276910916148, 39.193641302283126, 39.294513495404765, 39.39538568852641, 39.496257881648056, 39.597130074769694, 39.69800226789134, 39.798874461012986, 39.899746654134624, 40.00061884725626, 40.10149104037791, 40.20236323349955, 40.30323542662119, 40.40410761974284, 40.50497981286448, 40.60585200598612, 40.70672419910777, 40.80759639222941, 40.90846858535105, 41.00934077847269, 41.11021297159433, 41.211085164715975, 41.31195735783762, 41.41282955095926, 41.513701744080905, 41.61457393720255, 41.71544613032419, 41.816318323445834, 41.91719051656748, 42.01806270968911, 42.11893490281076, 42.2198070959324, 42.32067928905404, 42.42155148217569, 42.52242367529733, 42.62329586841897, 42.72416806154062, 42.82504025466226, 42.9259124477839, 43.02678464090555, 43.127656834027185, 43.228529027148824, 43.32940122027047, 43.430273413392115, 43.53114560651375, 43.6320177996354, 43.732889992757045, 43.83376218587868, 43.93463437900033, 44.035506572121975, 44.136378765243606, 44.23725095836525, 44.3381231514869, 44.438995344608536, 44.53986753773018, 44.64073973085183, 44.741611923973466, 44.84248411709511, 44.94335631021676, 45.044228503338395, 45.145100696460034, 45.24597288958168, 45.34684508270332, 45.447717275824964, 45.54858946894661, 45.64946166206825, 45.75033385518989, 45.85120604831154, 45.95207824143318, 46.05295043455482, 46.15382262767646, 46.2546948207981, 46.355567013919746, 46.45643920704139, 46.55731140016303, 46.658183593284676, 46.75905578640632, 46.85992797952796, 46.960800172649606, 47.06167236577125, 47.16254455889289, 47.26341675201453, 47.364288945136174, 47.46516113825781, 47.56603333137946, 47.666905524501104, 47.76777771762274, 47.86864991074439, 47.96952210386603, 48.07039429698767, 48.17126649010932, 48.27213868323095, 48.373010876352595, 48.47388306947424, 48.57475526259588, 48.675627455717525, 48.77649964883917, 48.87737184196081, 48.978244035082454, 49.0791162282041, 49.17998842132574, 49.28086061444738, 49.38173280756902, 49.48260500069066, 49.58347719381231, 49.68434938693395, 49.78522158005559, 49.88609377317724, 49.98696596629888, 50.08783815942052, 50.18871035254217, 50.289582545663805, 50.390454738785444, 50.49132693190709, 50.592199125028735, 50.69307131815037, 50.79394351127202, 50.894815704393665, 50.9956878975153, 51.09656009063695, 51.197432283758594, 51.29830447688023, 51.39917667000187, 51.50004886312352, 51.600921056245156, 51.7017932493668, 51.80266544248845, 51.903537635610085, 52.00440982873173, 52.10528202185338, 52.206154214975015, 52.30702640809666, 52.4078986012183, 52.50877079433994, 52.609642987461584, 52.71051518058323, 52.81138737370487, 52.91225956682651, 53.01313175994816, 53.1140039530698, 53.21487614619144, 53.31574833931309, 53.41662053243472, 53.517492725556366, 53.61836491867801])
+              .range(['#440154ff', '#440155ff', '#440255ff', '#440356ff', '#440457ff', '#450457ff', '#450558ff', '#450659ff', '#45075aff', '#45075aff', '#45085bff', '#45095cff', '#460a5dff', '#460a5dff', '#460b5eff', '#460c5fff', '#460d5fff', '#460e60ff', '#470e61ff', '#470f62ff', '#471062ff', '#471163ff', '#471164ff', '#471265ff', '#471365ff', '#481466ff', '#481467ff', '#481567ff', '#481668ff', '#481669ff', '#481769ff', '#48186aff', '#48186aff', '#48196bff', '#481a6cff', '#481a6cff', '#481b6dff', '#481c6dff', '#481c6eff', '#481d6fff', '#481e6fff', '#481e70ff', '#481f71ff', '#481f71ff', '#482072ff', '#482172ff', '#482173ff', '#482274ff', '#482374ff', '#482375ff', '#482475ff', '#482576ff', '#482577ff', '#482677ff', '#482778ff', '#472778ff', '#472878ff', '#472979ff', '#472979ff', '#472a79ff', '#472b7aff', '#472b7aff', '#472c7bff', '#472c7bff', '#462d7bff', '#462e7cff', '#462e7cff', '#462f7cff', '#46307dff', '#46307dff', '#46317eff', '#46327eff', '#46327eff', '#45337fff', '#45347fff', '#453480ff', '#453580ff', '#453680ff', '#453681ff', '#453781ff', '#453781ff', '#443882ff', '#443982ff', '#443982ff', '#443a82ff', '#443b83ff', '#433b83ff', '#433c83ff', '#433c83ff', '#433d84ff', '#433e84ff', '#423e84ff', '#423f85ff', '#423f85ff', '#424085ff', '#424185ff', '#414186ff', '#414286ff', '#414286ff', '#414386ff', '#414487ff', '#414487ff', '#404587ff', '#404687ff', '#404688ff', '#404788ff', '#3f4788ff', '#3f4888ff', '#3f4888ff', '#3f4989ff', '#3e4a89ff', '#3e4a89ff', '#3e4b89ff', '#3e4b89ff', '#3d4c89ff', '#3d4c8aff', '#3d4d8aff', '#3d4e8aff', '#3c4e8aff', '#3c4f8aff', '#3c4f8aff', '#3b508aff', '#3b508bff', '#3b518bff', '#3b528bff', '#3a528bff', '#3a538bff', '#3a538bff', '#3a548cff', '#39558cff', '#39558cff', '#39568cff', '#39568cff', '#38578cff', '#38578cff', '#38588cff', '#38588cff', '#37598cff', '#37598cff', '#375a8cff', '#375a8cff', '#375b8cff', '#365b8cff', '#365c8cff', '#365c8dff', '#365d8dff', '#355d8dff', '#355e8dff', '#355e8dff', '#355f8dff', '#345f8dff', '#34608dff', '#34608dff', '#34618dff', '#34618dff', '#33628dff', '#33628dff', '#33638dff', '#33638dff', '#32648dff', '#32648dff', '#32658dff', '#32658dff', '#31668dff', '#31668dff', '#31678dff', '#31678dff', '#31688dff', '#30688dff', '#30698dff', '#30698eff', '#306a8eff', '#2f6a8eff', '#2f6b8eff', '#2f6b8eff', '#2f6c8eff', '#2e6c8eff', '#2e6d8eff', '#2e6d8eff', '#2e6e8eff', '#2e6e8eff', '#2d6f8eff', '#2d6f8eff', '#2d708eff', '#2d708eff', '#2c718eff', '#2c718eff', '#2c728eff', '#2c728eff', '#2c738eff', '#2b738eff', '#2b738eff', '#2b748eff', '#2b748eff', '#2b758eff', '#2b758eff', '#2a768eff', '#2a768eff', '#2a778eff', '#2a778eff', '#2a788eff', '#29788eff', '#29798eff', '#29798eff', '#297a8eff', '#297a8eff', '#287b8eff', '#287b8eff', '#287c8eff', '#287c8eff', '#287d8eff', '#277d8eff', '#277e8eff', '#277e8eff', '#277f8eff', '#277f8eff', '#27808eff', '#26808eff', '#26818eff', '#26818eff', '#26828eff', '#26828eff', '#25838eff', '#25838eff', '#25848eff', '#25848dff', '#25858dff', '#24858dff', '#24868dff', '#24868dff', '#24878dff', '#24878dff', '#23888dff', '#23888dff', '#23898dff', '#23898dff', '#238a8dff', '#238a8dff', '#228b8dff', '#228b8dff', '#228c8dff', '#228c8dff', '#228d8dff', '#228d8dff', '#218e8cff', '#218e8cff', '#218e8cff', '#218f8cff', '#218f8cff', '#21908cff', '#21908cff', '#20918cff', '#20918cff', '#20928cff', '#20928cff', '#20938cff', '#20938cff', '#1f948bff', '#1f948bff', '#1f948bff', '#1f958bff', '#1f958bff', '#1f968bff', '#1f968bff', '#1f978bff', '#1f978bff', '#1f988bff', '#1f988aff', '#1f998aff', '#1f998aff', '#1f9a8aff', '#1f9a8aff', '#1f9b8aff', '#1f9b89ff', '#1f9c89ff', '#1f9c89ff', '#1f9d89ff', '#1f9d89ff', '#1f9e89ff', '#1f9e89ff', '#1f9f88ff', '#1f9f88ff', '#1fa088ff', '#1fa088ff', '#1fa188ff', '#1fa188ff', '#20a287ff', '#20a287ff', '#20a387ff', '#20a387ff', '#20a487ff', '#20a486ff', '#21a586ff', '#21a586ff', '#21a585ff', '#22a685ff', '#22a685ff', '#22a785ff', '#23a784ff', '#23a884ff', '#23a884ff', '#24a983ff', '#24a983ff', '#24aa83ff', '#25aa82ff', '#25ab82ff', '#26ab82ff', '#26ab81ff', '#26ac81ff', '#27ac81ff', '#27ad81ff', '#27ad80ff', '#28ae80ff', '#28ae80ff', '#28af7fff', '#29af7fff', '#29b07fff', '#2ab07eff', '#2bb07eff', '#2bb17eff', '#2cb17dff', '#2db27dff', '#2eb27cff', '#2eb37cff', '#2fb37cff', '#30b47bff', '#31b47bff', '#31b57aff', '#32b57aff', '#33b67aff', '#33b679ff', '#34b679ff', '#35b779ff', '#36b778ff', '#36b878ff', '#37b877ff', '#38b977ff', '#39b977ff', '#39ba76ff', '#3aba76ff', '#3bbb76ff', '#3bbb75ff', '#3cbb75ff', '#3dbc74ff', '#3ebc74ff', '#3fbd73ff', '#40bd73ff', '#41be72ff', '#42be71ff', '#43be71ff', '#44bf70ff', '#45bf70ff', '#46c06fff', '#47c06fff', '#48c16eff', '#49c16eff', '#4ac16dff', '#4bc26dff', '#4cc26cff', '#4dc36cff', '#4dc36bff', '#4ec36aff', '#4fc46aff', '#50c469ff', '#51c569ff', '#52c568ff', '#53c668ff', '#54c667ff', '#55c667ff', '#56c766ff', '#57c765ff', '#59c865ff', '#5ac864ff', '#5bc863ff', '#5cc963ff', '#5dc962ff', '#5ec961ff', '#60ca60ff', '#61ca60ff', '#62cb5fff', '#63cb5eff', '#64cb5eff', '#65cc5dff', '#66cc5cff', '#68cd5cff', '#69cd5bff', '#6acd5aff', '#6bce5aff', '#6cce59ff', '#6dce58ff', '#6ecf58ff', '#70cf57ff', '#71d056ff', '#72d055ff', '#73d055ff', '#74d154ff', '#76d153ff', '#77d152ff', '#78d252ff', '#7ad251ff', '#7bd250ff', '#7cd24fff', '#7dd34eff', '#7fd34eff', '#80d34dff', '#81d44cff', '#83d44bff', '#84d44aff', '#85d54aff', '#87d549ff', '#88d548ff', '#89d647ff', '#8ad646ff', '#8cd646ff', '#8dd645ff', '#8ed744ff', '#90d743ff', '#91d742ff', '#92d842ff', '#94d841ff', '#95d840ff', '#96d93fff', '#97d93eff', '#99d93dff', '#9ad93cff', '#9bd93cff', '#9dda3bff', '#9eda3aff', '#a0da39ff', '#a1da38ff', '#a2db37ff', '#a4db36ff', '#a5db35ff', '#a6db35ff', '#a8dc34ff', '#a9dc33ff', '#aadc32ff', '#acdc31ff', '#addc30ff', '#aedd2fff', '#b0dd2eff', '#b1dd2dff', '#b2dd2dff', '#b4de2cff', '#b5de2bff', '#b6de2aff', '#b8de29ff', '#b9de28ff', '#badf28ff', '#bcdf27ff', '#bddf27ff', '#bedf26ff', '#c0df25ff', '#c1e025ff', '#c3e024ff', '#c4e023ff', '#c5e023ff', '#c7e022ff', '#c8e122ff', '#c9e121ff', '#cbe120ff', '#cce120ff', '#cee11fff', '#cfe21fff', '#d0e21eff', '#d2e21dff', '#d3e21dff', '#d4e21cff', '#d6e21bff', '#d7e31bff', '#d9e31aff', '#dae31aff', '#dbe319ff', '#dde319ff', '#dee419ff', '#dfe41aff', '#e0e41aff', '#e2e41bff', '#e3e41bff', '#e4e41bff', '#e6e51cff', '#e7e51cff', '#e8e51dff', '#e9e51dff', '#ebe51eff', '#ece51eff', '#ede51fff', '#eee61fff', '#f0e620ff', '#f1e620ff', '#f2e621ff', '#f3e621ff', '#f5e621ff', '#f6e622ff', '#f7e722ff', '#f8e723ff', '#fae723ff', '#fbe724ff', '#fce724ff', '#fde725ff']);
+    
+
+    color_map_0c764a0efd97116004e5ad35b0a62203.x = d3.scale.linear()
+              .domain([3.283140550978373, 53.61836491867801])
+              .range([0, 450 - 50]);
+
+    color_map_0c764a0efd97116004e5ad35b0a62203.legend = L.control({position: 'topright'});
+    color_map_0c764a0efd97116004e5ad35b0a62203.legend.onAdd = function (map) {var div = L.DomUtil.create('div', 'legend'); return div};
+    color_map_0c764a0efd97116004e5ad35b0a62203.legend.addTo(map_9d098e0fa0068a6fe3b7e700be2e0275);
+
+    color_map_0c764a0efd97116004e5ad35b0a62203.xAxis = d3.svg.axis()
+        .scale(color_map_0c764a0efd97116004e5ad35b0a62203.x)
+        .orient("top")
+        .tickSize(1)
+        .tickValues([3.283140550978373, '', 8.581585221262545, '', 13.880029891546718, '', 19.17847456183089, '', 24.476919232115062, '', 29.775363902399235, '', 35.073808572683404, '', 40.37225324296758, '', 45.67069791325175, '', 50.96914258353592, '']);
+
+    color_map_0c764a0efd97116004e5ad35b0a62203.svg = d3.select(".legend.leaflet-control").append("svg")
+        .attr("id", 'legend')
+        .attr("width", 450)
+        .attr("height", 40);
+
+    color_map_0c764a0efd97116004e5ad35b0a62203.g = color_map_0c764a0efd97116004e5ad35b0a62203.svg.append("g")
+        .attr("class", "key")
+        .attr("fill", "black")
+        .attr("transform", "translate(25,16)");
+
+    color_map_0c764a0efd97116004e5ad35b0a62203.g.selectAll("rect")
+        .data(color_map_0c764a0efd97116004e5ad35b0a62203.color.range().map(function(d, i) {
+          return {
+            x0: i ? color_map_0c764a0efd97116004e5ad35b0a62203.x(color_map_0c764a0efd97116004e5ad35b0a62203.color.domain()[i - 1]) : color_map_0c764a0efd97116004e5ad35b0a62203.x.range()[0],
+            x1: i < color_map_0c764a0efd97116004e5ad35b0a62203.color.domain().length ? color_map_0c764a0efd97116004e5ad35b0a62203.x(color_map_0c764a0efd97116004e5ad35b0a62203.color.domain()[i]) : color_map_0c764a0efd97116004e5ad35b0a62203.x.range()[1],
+            z: d
+          };
+        }))
+      .enter().append("rect")
+        .attr("height", 40 - 30)
+        .attr("x", function(d) { return d.x0; })
+        .attr("width", function(d) { return d.x1 - d.x0; })
+        .style("fill", function(d) { return d.z; });
+
+    color_map_0c764a0efd97116004e5ad35b0a62203.g.call(color_map_0c764a0efd97116004e5ad35b0a62203.xAxis).append("text")
+        .attr("class", "caption")
+        .attr("y", 21)
+        .attr("fill", "black")
+        .text("Trip Duration (minutes)");
+    
+            tile_layer_3e7faa885219a970d5b80b5ad636d363.addTo(map_9d098e0fa0068a6fe3b7e700be2e0275);
+        
+</script>
+</html>
