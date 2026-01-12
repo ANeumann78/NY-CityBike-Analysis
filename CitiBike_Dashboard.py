@@ -212,10 +212,13 @@ elif page == "Interactive Map":
     embed_html(chosen, height=740)
 
     st.markdown("""
-**Interpretation**
-- The map highlights where CitiBike activity concentrates (hotspots) and/or which flows dominate (depending on the chosen map).
-- Spatial clustering reveals areas most likely to experience bike shortages or dock saturation.
-- These patterns support a zone-based rebalancing strategy: prioritize high-impact corridors rather than reacting station-by-station.
+**Interpretation (Heatmap: Top 50 Start vs End Stations)**  
+- This map includes two layers: **Start heat (top 50)** and **End heat (top 50)**. Use the layer control to compare where trips *begin* versus where they *finish*.  
+- Hotspots indicate **demand concentration**, especially across dense Manhattan corridors. CitiBike activity is clustered, not evenly spread.  
+- Operational implication:
+  - **Start hotspots** are the highest risk for **bike shortages** (stations running empty).
+  - **End hotspots** are the highest risk for **dock saturation** (stations becoming full).  
+- This supports **zone-based rebalancing**: prioritize moving bikes between clusters of start-pressure and end-pressure areas instead of reacting station-by-station.
 """)
 
 
